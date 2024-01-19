@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Zilla Slab", serif;
+}
+
+.drop-down {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+body {
+  background-color: #fefaef;
+}
+
+.header {
+  height: 10rem;
+  background-color: #4b4438;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5rem;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.submit {
+  width: fit-content;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: none;
+  background-color: #4b4438;
+  color: white;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.submit:hover {
+  background-color: #3c362d;
+  font-weight: 900;
+}
+
+.form {
+  position: relative;
+}
+
+.drop-down-container {
+  position: absolute;
+  background-color: #ffffff;
+  width: 28rem;
+}
+
+.search {
+  margin-top: 5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.search-list {
+  /* background-color: #fffefc; */
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.search-list:hover {
+  font-weight: 700;
+}
+
+.results-container {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: #e5e1d7;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.location,
+.temp {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.loader {
+  border: 16px solid white; /* Light grey */
+  border-top: 16px solid #4b4438; /* Blue */
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.inactive {
+  display: none;
+}
